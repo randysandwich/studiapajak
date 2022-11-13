@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?Sen");
+@import url("https://fonts.googleapis.com/css?family=Sen");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 *,
 *::before,
@@ -38,22 +38,12 @@ h3 {
 }
 
 p {
-  font-size: 0.98rem;;
+  font-size: 0.98rem;
+  line-height: 1.1;
 }
 
 main {
   padding: 12vh 0;
-}
-
-img[alt="Linktree photo"] {
-  --scale: 164px;
-  width: var(--scale);
-  height: var(--scale);
-  border-radius: 24px;
-}
-
-img[alt="Linktree photo"] + h3 {
-  margin: 16px 0 0px;
 }
 
 .linktree-nav {
@@ -103,7 +93,7 @@ img[alt="Linktree photo"] + h3 {
   }
 }
 
-.footer-social-icons {
+.header-social-icons {
   width: 350px;
   display:block;
   margin: 0 auto;

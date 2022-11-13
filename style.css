@@ -136,7 +136,7 @@ ul.social-icons {
   background-color: #bc2a8d;
 }
 
-.fa-facebook-f {
+.fa-tiktok {
   padding:10px 14px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -145,8 +145,21 @@ ul.social-icons {
   transition: .5s;
   background-color: #322f30;
 }
-.fa-facebook-f:hover {
-  background-color: #3d5b99;
+.fa-tiktok:hover {
+  background-color: #25F4EE;
+}
+
+.fa-youtube {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-youtube:hover {
+  background-color: #FF0000;
 }
 
 .fa-facebook-f {
@@ -159,10 +172,10 @@ ul.social-icons {
   background-color: #322f30;
 }
 .fa-facebook-f:hover {
-  background-color: #3d5b99;
+  background-color: #4267B2;
 }
 
-.fa-facebook-f {
+.fa-twitter {
   padding:10px 14px;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -171,19 +184,6 @@ ul.social-icons {
   transition: .5s;
   background-color: #322f30;
 }
-.fa-facebook-f:hover {
-  background-color: #3d5b99;
-}
-
-.fa-facebook-f {
-  padding:10px 14px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: #322f30;
-}
-.fa-facebook-f:hover {
-  background-color: #3d5b99;
+.fa-twitter:hover {
+  background-color: #1DA1F2;
 }

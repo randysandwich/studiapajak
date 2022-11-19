@@ -8,11 +8,11 @@
 </head>
 <body>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<h2>Filterable Table</h2>
-<p>Type something in the input field to search the table for first names, last names or emails:</p>  
+<h2>Cari kantor pajak</h2>
+
 <div class="wrap">
 	<div class="search">
-<input id="myInput" class="searchTerm" type="text" placeholder="Masukkan nama daerah, kota/kabupaten, kecamatan, desa/kelurahan">
+<input id="myInput" class="searchTerm" type="text" placeholder="Ketik nama kota/kabupaten, kecamatan, desa/kelurahan">
 <button type="submit" class="searchButton">
 	<i class="fa fa-search"></i>
  </button>
@@ -20,7 +20,7 @@
 </div>
 <br><br>
 
-<table>
+<table class="styled-table">
   <thead>
   <tr>
     <th>Firstname</th>
@@ -30,7 +30,7 @@
   </thead>
   <tbody id="myTable">
   <tr>
-    <td>John</td>
+    <td>John<br><br><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a></td>
     <td>Doe</td>
     <td>john@example.com</td>
   </tr>
@@ -51,8 +51,5 @@
   </tr>
   </tbody>
 </table>
-  
-<p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
-
 </body>
 </html>

@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - vue.js - order and filter list animation</title>
-  <link rel="stylesheet" href="./style.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./script.js"></script>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="app" v-cloak>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<h2>Filterable Table</h2>
+<p>Type something in the input field to search the table for first names, last names or emails:</p>  
+<div class="wrap">
 	<div class="search">
-		<div class="icon">
-			<div class="circle"></div>
-			<div class="bar"></div>
-		</div>
-		<div class="search-input">
-			<input type="text" placeholder="Search..." v-model="searchQuery">
-		</div>
-	</div>
-	<div class="table-container">
-		<table>
-			<thead>
-				<tr>
-					<th class="small center" @click="sort('position','asc')">#</th>
-					<th class="medium center"></th>
-					<th class="large" @click="sort('teamName','asc')">Club</th>
-					<th class="medium center" @click="sort('points','asc')">Pts</th>
-					<th class="medium center" @click="sort('goalDifference','desc')">Diff</th>
-				</tr>
-			</thead>
-			<tbody name="fade-list" is="transition-group">
-				<tr v-for="team in filteredBySearch" :key="team.position">
-					<td class="small center">{{team.position}}</td>
-					<td class="medium"><img :src="team.crestURI" alt=""></td>
-					<td class="large">{{team.teamName }}</td>
-					<td class="medium center">{{team.points}}</td>
-					<td class="medium center">
-						<i v-if="team.goalDifference>0">+</i>{{team.goalDifference}}
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="warning" v-if="filteredBySearch.length<=0">
-			<span>No results found.</span>
-		</div>
-	</div>
+<input id="myInput" class="searchTerm" type="text" placeholder="Masukkan nama daerah, kota/kabupaten, kecamatan, desa/kelurahan">
+<button type="submit" class="searchButton">
+	<i class="fa fa-search"></i>
+ </button>
+ 	</div>
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
-<script src='https://codepen.io/ClementRoche/pen/OrGaMg.js'></script><script  src="./script.js"></script>
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@mail.com</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@greatstuff.com</td>
+  </tr>
+  <tr>
+    <td>Anja</td>
+    <td>Ravendale</td>
+    <td>a_r@test.com</td>
+  </tr>
+  </tbody>
+</table>
+  
+<p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
 
 </body>
 </html>

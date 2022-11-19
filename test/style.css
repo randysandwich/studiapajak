@@ -2,7 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
 body {
-  background: #9BC86A;
+  background: #1216F2;
   font: 400 14px "Calibri", "Arial";
   padding: 20px;
 }
@@ -59,7 +59,7 @@ table td, table th {
 }
 table thead tr {
   height: 60px;
-  background: #FFED86;
+  background: #FFE01B;
   font-size: 16px;
 }
 table tbody tr {
@@ -111,16 +111,16 @@ table td.r, table th.r {
     top: 0;
   }
   table tbody tr td:nth-child(1):before {
-    content: "Code";
+    content: "Nama Kantor Pajak";
   }
   table tbody tr td:nth-child(2):before {
-    content: "Stock";
+    content: "Kode KPP";
   }
   table tbody tr td:nth-child(3):before {
-    content: "Cap";
+    content: "Wilayah Kerja";
   }
   table tbody tr td:nth-child(4):before {
-    content: "Inch";
+    content: "Media Sosial";
   }
   table tbody tr td:nth-child(5):before {
     content: "Box Type";

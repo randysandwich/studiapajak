@@ -2,9 +2,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
 body {
-  background: #1216F2;
+  background: #FFE01B;
   font: 400 14px "Calibri", "Arial";
   padding: 20px;
+  color:#000;
 }
 
 .search {
@@ -15,26 +16,26 @@ body {
   
 .searchTerm {
 	width: 90%;
-	border: 3px solid #FFE01B;
+  border: 3px solid #1216F2;
 	border-right: none;
 	padding: 5px;
 	height: 20px;
 	border-radius: 5px 0 0 5px;
 	outline: none;
-	color: #9DBFAF;
+	color: #000;
 }
   
 .searchTerm:focus{
-	color: #FFE01B;
+	color: #000;
 }
   
 .searchButton {
 	width: 40px;
 	height: 36px;
-	border: 1px solid #FFE01B;
-	background: #FFE01B;
+	border: 1px solid #1216F2;
+	background: #1216F2;
 	text-align: center;
-	color: #000;
+	color: #fff;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	font-size: 20px;
@@ -59,8 +60,9 @@ table td, table th {
 }
 table thead tr {
   height: 60px;
-  background: #FFE01B;
+  background: #1216F2;
   font-size: 16px;
+  color:#fff;
 }
 table tbody tr {
   height: 48px;
@@ -91,14 +93,24 @@ table td.r, table th.r {
   }
   table thead {
     display: none;
+    background: #FFE01B;
+    vertical-align: middle;
   }
+
+  table thead tr {
+    background: #FFE01B;
+    vertical-align: middle;
+  }
+
   table tbody tr {
     height: auto;
     padding: 8px 0;
+    vertical-align: middle;
   }
   table tbody tr td {
     padding-left: 45%;
     margin-bottom: 12px;
+    vertical-align: middle;
   }
   table tbody tr td:last-child {
     margin-bottom: 0;
@@ -109,6 +121,7 @@ table td.r, table th.r {
     width: 40%;
     left: 10px;
     top: 0;
+    vertical-align: middle;
   }
   table tbody tr td:nth-child(1):before {
     content: "Nama Kantor Pajak";
@@ -121,6 +134,7 @@ table td.r, table th.r {
   }
   table tbody tr td:nth-child(4):before {
     content: "Media Sosial";
+    vertical-align: middle;
   }
   table tbody tr td:nth-child(5):before {
     content: "Box Type";
